@@ -14,7 +14,7 @@ if (!empty($_GET['token']) ){
     $noticia=get_noticias($api_key);
     $status=publish_linkedin($noticia);
     if ($status==true){
-        echo "Noticia Publicada som sucesso";
+        echo "Noticia Publicada com sucesso";
     }else{
         echo "Autenticado, porem o envio falhou";
     }
